@@ -44,7 +44,7 @@ public class Api {
     }
 
 
-    public static void getUser(BaseObserver observer, Map<String, Object> paramsMap) {
+    public static void getUser(Map<String, Object> paramsMap, BaseObserver observer) {
         apiSubscribe(RetrofitFactory.getService().getUser(paramsMap), observer);
     }
 

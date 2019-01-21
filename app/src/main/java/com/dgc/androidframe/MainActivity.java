@@ -36,21 +36,12 @@ public class MainActivity extends Activity {
         Map<String, Object> map = new HashMap<>();
         map.put("userId", "AP170102105451");
 
-
-        Api.getUser(new BaseObserver<TestBean>(this) {
+        Api.getUser(map, new BaseObserver<TestBean>(this) {
             @Override
             public void onSuccess(TestBean testBean) {
 
                 ((TextView) findViewById(R.id.tv_result)).setText(testBean.getAge() + "=====" + testBean.getName());
             }
-        }, map);
-
-//        RetrofitFactory.getService().getUser(map)
-//                .subscribe(new BaseObserver<TestBean>(this) {
-//                    @Override
-//                    public void onSuccess(TestBean testBean) {
-//                        ((TextView) findViewById(R.id.tv_result)).setText(testBean.getAge() + "=====" + testBean.getName());
-//                    }
-//                });
+        });
     }
 }
