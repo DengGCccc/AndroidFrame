@@ -2,11 +2,11 @@ package com.dgc.androidframe.test_net;
 
 import android.widget.Toast;
 
-import com.dgc.androidframe.base.net.BaseBean;
-import com.dgc.androidframe.base.net.BaseObserver;
-import com.dgc.androidframe.base.net.NetworkUtil;
-import com.dgc.androidframe.base.net.RetrofitFactory;
-import com.dgc.androidframe.utils.MyApplication;
+import com.dgc.framework.base.net.BaseBean;
+import com.dgc.framework.base.net.BaseObserver;
+import com.dgc.framework.base.net.NetworkUtil;
+import com.dgc.framework.base.net.RetrofitFactory;
+import com.dgc.framework.MyApplication;
 
 import java.util.Map;
 

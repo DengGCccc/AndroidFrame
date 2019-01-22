@@ -1,4 +1,4 @@
-package com.dgc.androidframe.base.net;
+package com.dgc.framework.base.net;
 
 import com.dgc.androidframe.test_net.Api;
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;

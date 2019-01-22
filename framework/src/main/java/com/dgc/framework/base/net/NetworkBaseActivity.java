@@ -1,4 +1,4 @@
-package com.dgc.androidframe.base.net;
+package com.dgc.framework.base.net;
 
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;

@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.dgc.androidframe.R;
-import com.dgc.androidframe.base.BaseActivity;
+import com.dgc.framework.base.BaseActivity;
 
 
 public class TestActivity extends BaseActivity implements TestView {

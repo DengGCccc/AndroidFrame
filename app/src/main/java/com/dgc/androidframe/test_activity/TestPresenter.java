@@ -1,8 +1,8 @@
 package com.dgc.androidframe.test_activity;
 
 
-import com.dgc.androidframe.base.mvp.BasePresenter;
-import com.dgc.androidframe.base.mvp.Callback;
+import com.dgc.framework.base.mvp.BasePresenter;
+import com.dgc.framework.base.mvp.Callback;
 
 /**
  * Created by Deng on 2018/7/25.

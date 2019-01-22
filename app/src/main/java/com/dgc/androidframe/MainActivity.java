@@ -8,7 +8,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
-import com.dgc.androidframe.base.net.BaseObserver;
+import com.dgc.framework.base.net.BaseObserver;
 import com.dgc.androidframe.test_activity.TestActivity;
 import com.dgc.androidframe.test_net.Api;
 import com.dgc.androidframe.test_net.TestBean;

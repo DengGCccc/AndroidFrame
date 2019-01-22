@@ -1,4 +1,4 @@
-package com.dgc.androidframe.utils;
+package com.dgc.framework;
 
 import android.app.Application;
 

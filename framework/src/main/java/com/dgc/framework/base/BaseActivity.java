@@ -1,12 +1,12 @@
-package com.dgc.androidframe.base;
+package com.dgc.framework.base;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
-import com.dgc.androidframe.base.mvp.BasePresenter;
-import com.dgc.androidframe.base.mvp.IBaseView;
+import com.dgc.framework.base.mvp.BasePresenter;
+import com.dgc.framework.base.mvp.IBaseView;
 
 import java.util.HashSet;
 import java.util.Set;

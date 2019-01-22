@@ -1,7 +1,7 @@
 package com.dgc.androidframe.test_activity;
 
 
-import com.dgc.androidframe.base.mvp.IBaseView;
+import com.dgc.framework.base.mvp.IBaseView;
 
 /**
  * Created by Deng on 2018/7/25.

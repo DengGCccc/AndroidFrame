@@ -1,4 +1,4 @@
-package com.dgc.androidframe.base;
+package com.dgc.framework.base;
 
 
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dgc.androidframe.base.mvp.IBaseView;
+import com.dgc.framework.base.mvp.IBaseView;
 
 /**
  * Created by Deng on 2018/7/25.
