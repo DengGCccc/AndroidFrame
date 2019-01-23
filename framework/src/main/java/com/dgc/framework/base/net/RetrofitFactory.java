@@ -1,6 +1,6 @@
 package com.dgc.framework.base.net;
 
-import com.dgc.androidframe.test_net.Api;
+
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 import java.io.IOException;
@@ -15,18 +15,16 @@ import retrofit2.Retrofit;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
 public class RetrofitFactory {
-    private final static int TIME_OUT = 30;
-    private static RetrofitService retrofitService;
+    private final static int TIME_OUT = 10;
 
+    private Retrofit mRetrofit;
 
-    public static RetrofitService getService() {
-        if (null == retrofitService) {
-            synchronized (RetrofitFactory.class) {
-                new RetrofitFactory();
-            }
-        }
+    public static RetrofitFactory getInstance() {
+        return Holder.INSTANCE;
+    }
 
-        return retrofitService;
+    private static class Holder {
+        private static RetrofitFactory INSTANCE = new RetrofitFactory();
     }
 
     private RetrofitFactory() {
@@ -43,13 +41,15 @@ public class RetrofitFactory {
                 .addInterceptor(new HttpLoggingInterceptor().setLevel(HttpLoggingInterceptor.Level.BODY))
                 .build();
 
-        retrofitService = new Retrofit.Builder()
-                .baseUrl(Api.BASE_URL)
+        mRetrofit = new Retrofit.Builder()
+                .baseUrl(BaseApi.BASE_URL)
                 .addConverterFactory(JacksonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(httpClient)
-                .build()
-                .create(RetrofitService.class);
+                .build();
+    }
 
+    public Retrofit getRetrofit() {
+        return mRetrofit;
     }
 }

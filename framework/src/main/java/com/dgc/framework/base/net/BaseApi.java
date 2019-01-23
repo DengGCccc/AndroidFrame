@@ -1,4 +1,4 @@
-package com.dgc.androidframe.test_net;
+package com.dgc.framework.base.net;
 
 import android.widget.Toast;
 
@@ -20,14 +20,13 @@ import io.reactivex.schedulers.Schedulers;
 /**
  * Created by Deng on 2018/7/26.
  */
-public class Api {
-    public static final String BASE_URL = "http://yapi.demo.qunar.com/mock/14486/dgc/helloworld/";
-
+public class BaseApi {
+    public static String BASE_URL;
 
     /**
      * 封装线程管理和订阅的过程
      */
-    private static <T> void apiSubscribe(Observable<BaseBean<T>> observable, BaseObserver observer) {
+    protected static <T> void apiSubscribe(Observable<BaseBean<T>> observable, BaseObserver observer) {
         observable.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .unsubscribeOn(Schedulers.io())
@@ -40,13 +39,8 @@ public class Api {
                     }
                 })
                 .subscribe(observer);
-
     }
 
-
-    public static void getUser(Map<String, Object> paramsMap, BaseObserver observer) {
-        apiSubscribe(RetrofitFactory.getService().getUser(paramsMap), observer);
-    }
 
 
 }

@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 
-import com.dgc.androidframe.utils.MyApplication;
+import com.dgc.framework.MyApplication;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableSource;
@@ -33,7 +33,6 @@ public class NetworkBaseActivity extends AppCompatActivity {
                             public void accept(Disposable disposable) {
                                 mDisposable = disposable;
                                 if (!NetworkUtil.isNetworkAvailable(MyApplication.app)) {
-                                    System.out.println("=========");
                                     Toast.makeText(MyApplication.app, "网络连接异常，请检查网络", Toast.LENGTH_LONG).show();
                                 }
                             }

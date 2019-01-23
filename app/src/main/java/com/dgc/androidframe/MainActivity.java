@@ -8,9 +8,10 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.TextView;
 
+import com.dgc.androidframe.test_net.MyApi;
 import com.dgc.framework.base.net.BaseObserver;
 import com.dgc.androidframe.test_activity.TestActivity;
-import com.dgc.androidframe.test_net.Api;
+import com.dgc.framework.base.net.BaseApi;
 import com.dgc.androidframe.test_net.TestBean;
 
 import java.util.HashMap;
@@ -36,7 +37,7 @@ public class MainActivity extends Activity {
         Map<String, Object> map = new HashMap<>();
         map.put("userId", "AP170102105451");
 
-        Api.getUser(map, new BaseObserver<TestBean>(this) {
+        MyApi.getInstance().getUser(map, new BaseObserver<TestBean>(this) {
             @Override
             public void onSuccess(TestBean testBean) {
 

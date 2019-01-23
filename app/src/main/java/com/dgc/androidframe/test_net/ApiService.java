@@ -1,7 +1,8 @@
-package com.dgc.framework.base.net;
+package com.dgc.androidframe.test_net;
 
 
 import com.dgc.androidframe.test_net.TestBean;
+import com.dgc.framework.base.net.BaseBean;
 
 import java.util.Map;
 
@@ -14,7 +15,7 @@ import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.QueryMap;
 
-public interface RetrofitService {
+public interface ApiService {
 //    @FormUrlEncoded
 //    @POST("R/MemberCardInformation.aspx")
 //    Observable<BaseEntity<VipModel>> getUser(@FieldMap Map<String, String> map);
