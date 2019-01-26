@@ -9,7 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.dgc.framework.base.mvp.IBaseView;
+import com.dgc.framework.mvp.IBaseView;
 
 /**
  * Created by Deng on 2018/7/25.

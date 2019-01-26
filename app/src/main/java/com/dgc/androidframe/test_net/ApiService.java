@@ -1,8 +1,7 @@
 package com.dgc.androidframe.test_net;
 
 
-import com.dgc.androidframe.test_net.TestBean;
-import com.dgc.framework.base.net.BaseBean;
+import com.dgc.framework.net.BaseBean;
 
 import java.util.Map;
 

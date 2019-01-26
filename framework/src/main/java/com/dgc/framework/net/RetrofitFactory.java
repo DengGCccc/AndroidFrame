@@ -1,4 +1,4 @@
-package com.dgc.framework.base.net;
+package com.dgc.framework.net;
 
 
 import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;

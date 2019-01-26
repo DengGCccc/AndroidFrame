@@ -1,4 +1,4 @@
-package com.dgc.framework.base.mvp;
+package com.dgc.framework.mvp;
 
 import android.content.Context;
 

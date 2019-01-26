@@ -5,8 +5,9 @@ import android.content.Context;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
-import com.dgc.framework.base.mvp.BasePresenter;
-import com.dgc.framework.base.mvp.IBaseView;
+
+import com.dgc.framework.mvp.BasePresenter;
+import com.dgc.framework.mvp.IBaseView;
 
 import java.util.HashSet;
 import java.util.Set;

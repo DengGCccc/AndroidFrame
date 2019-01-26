@@ -1,14 +1,12 @@
-package com.dgc.framework.base.net;
+package com.dgc.framework.net;
 
 import android.widget.Toast;
 
-import com.dgc.framework.base.net.BaseBean;
-import com.dgc.framework.base.net.BaseObserver;
-import com.dgc.framework.base.net.NetworkUtil;
-import com.dgc.framework.base.net.RetrofitFactory;
+import com.dgc.framework.net.BaseBean;
+import com.dgc.framework.net.BaseObserver;
+import com.dgc.framework.net.NetworkUtil;
+import com.dgc.framework.net.RetrofitFactory;
 import com.dgc.framework.MyApplication;
-
-import java.util.Map;
 
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;

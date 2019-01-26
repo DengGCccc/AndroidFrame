@@ -9,9 +9,9 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.dgc.androidframe.test_net.MyApi;
-import com.dgc.framework.base.net.BaseObserver;
+import com.dgc.framework.net.BaseObserver;
 import com.dgc.androidframe.test_activity.TestActivity;
-import com.dgc.framework.base.net.BaseApi;
+import com.dgc.framework.net.BaseApi;
 import com.dgc.androidframe.test_net.TestBean;
 
 import java.util.HashMap;

@@ -1,8 +1,8 @@
 package com.dgc.androidframe.test_net;
 
-import com.dgc.framework.base.net.BaseApi;
-import com.dgc.framework.base.net.BaseObserver;
-import com.dgc.framework.base.net.RetrofitFactory;
+import com.dgc.framework.net.BaseApi;
+import com.dgc.framework.net.BaseObserver;
+import com.dgc.framework.net.RetrofitFactory;
 
 import java.util.Map;
 

@@ -1,7 +1,7 @@
 package com.dgc.androidframe.test_net;
 
 
-import com.dgc.framework.base.net.BaseBean;
+import com.dgc.framework.net.BaseBean;
 
 /**
  * Created by Deng on 2018/7/25.
