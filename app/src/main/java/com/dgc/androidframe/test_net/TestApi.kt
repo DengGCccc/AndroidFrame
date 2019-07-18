@@ -2,20 +2,20 @@ package com.dgc.androidframe.test_net
 
 import android.widget.Toast
 import com.dgc.androidframe.utils.RuntimeContext
-import com.dgc.framework.net.AbsApi
-import com.dgc.framework.net.BaseObserver
-import com.dgc.framework.net.NetworkUtil
+import com.dgc.framework.net.BaseApi
+import com.dgc.framework.net.NormalObserver
+import com.dgc.framework.utils.NetworkUtil
 import com.dgc.framework.net.RetrofitFactory
 import io.reactivex.disposables.Disposable
 
 /**
  * Created by Deng on 2019/1/22.
  */
-class TestApi private constructor() : AbsApi() {
+class TestApi : BaseApi() {
     private var mRetrofitService: ApiService
 
     init {
-        BASE_URL = "http://yapi.demo.qunar.com/mock/14486/dgc/helloworld/"
+        BASE_URL = "http://yapi.demo.qunar.com/mock/81350/"
         mRetrofitService = RetrofitFactory.instance.retrofit.create(ApiService::class.java)
     }
 
@@ -30,7 +30,7 @@ class TestApi private constructor() : AbsApi() {
         }
     }
 
-    fun getUser(paramsMap: Map<String, Any>, observer: BaseObserver<TestBean>) {
+    fun getUser(paramsMap: HashMap<String, Any>, observer: NormalObserver<UserBean>) {
         apiSubscribe(mRetrofitService.getUser(paramsMap), observer)
     }
 

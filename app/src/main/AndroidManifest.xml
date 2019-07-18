@@ -20,6 +20,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".test_activity.TestActivity"/>
+        <activity android:name=".test_net.NetActivity"/>
     </application>
 </manifest>

@@ -9,22 +9,17 @@ import io.reactivex.schedulers.Schedulers
 /**
  * Created by Deng on 2018/7/26.
  */
-abstract class AbsApi {
+abstract class BaseApi {
     private var mDisposable: Disposable? = null
 
     /**
      * 封装线程管理和订阅的过程
      */
-    protected fun <T> apiSubscribe(observable: Observable<BaseBean<T>>, observer: BaseObserver<T>) {
+    protected fun <T> apiSubscribe(observable: Observable<NormalResult<T>>, observer: NormalObserver<T>) {
         observable.subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .unsubscribeOn(Schedulers.io())
-            .doOnSubscribe(object : Consumer<Disposable> {
-                override fun accept(disposable: Disposable) {
-                    mDisposable = disposable
-                    accept(disposable)
-                }
-            })
+            .doOnSubscribe { disposable -> mDisposable = disposable }
             .subscribe(observer)
     }
 

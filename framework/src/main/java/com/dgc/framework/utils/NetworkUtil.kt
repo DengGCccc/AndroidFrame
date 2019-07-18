@@ -1,4 +1,4 @@
-package com.dgc.framework.net
+package com.dgc.framework.utils
 
 import android.content.Context
 import android.net.ConnectivityManager

@@ -1,7 +1,6 @@
 package com.dgc.androidframe.test_net
 
-import com.dgc.framework.net.BaseBean
-
+import com.dgc.framework.net.NormalResult
 import io.reactivex.Observable
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -17,7 +16,7 @@ interface ApiService {
     //    Observable<BaseEntity<VipModel>> getUser(@FieldMap Map<String, String> map);
 
     @GET("getUserInfo")
-    fun getUser(@QueryMap map: Map<String, Any>): Observable<BaseBean<TestBean>>
+    fun getUser(@QueryMap map: HashMap<String, Any>): Observable<NormalResult<UserBean>>
 
     /**
      * 上传三张图片

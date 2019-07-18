@@ -7,9 +7,9 @@ import android.view.View
 import android.widget.TextView
 
 import com.dgc.androidframe.test_net.TestApi
-import com.dgc.framework.net.BaseObserver
-import com.dgc.androidframe.test_activity.TestActivity
-import com.dgc.androidframe.test_net.TestBean
+import com.dgc.framework.net.NormalObserver
+import com.dgc.androidframe.test_net.NetActivity
+import com.dgc.androidframe.test_net.UserBean
 
 import java.util.HashMap
 
@@ -25,19 +25,6 @@ class MainActivity : Activity() {
     }
 
     fun btnClick(v: View) {
-        startActivity(Intent(this, TestActivity::class.java))
-    }
-
-    fun btnClick2(v: View) {
-        val map = HashMap<String, Any>()
-        map.put("userId", "AP170102105451")
-
-//        TestApi.instance.getUser(map, object : BaseObserver<TestBean>(this) {
-//            override fun onSuccess(testBean: TestBean) {
-//
-//                (findViewById<View>(R.id.tv_result) as TextView).text =
-//                    testBean.age.toString() + "=====" + testBean.name
-//            }
-//        })
+        startActivity(Intent(this, NetActivity::class.java))
     }
 }

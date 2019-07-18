@@ -7,14 +7,8 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MVP"
-        android:onClick="btnClick"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="TestNetwork"
-        android:onClick="btnClick2"/>
+        android:onClick="btnClick"/>
 
     <TextView
         android:id="@+id/tv_result"
